@@ -15,3 +15,12 @@
     @mixin-content;
   }
 }
+
+/* add empty content in the row element to span the background */
+@define-mixin clearfix {
+  &::after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
